@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/* .playwrite-au-sa-<uniquifier> {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+/* .unbounded-<uniquifier> {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+   */
+  body {
+    font-family: "Unbounded", sans-serif;
+    line-height: 1.2;
+    background-color: #111;
+    color: #fff;
+    background-image: url(../web_maket_abdullo/assets/eat.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .header {
+    
+    background-size: cover;
+    /* padding: 5vh 5vw; */
+    text-align: center;
+  }
+
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, rgb(17, 17, 17), rgba(17, 17, 17, 0));
+    padding: 5vh 5vw;
+  }
+  
+  .logo {
+    font-family: "Playwrite AU SA", cursive;
+    font-size: 2rem;
+    color: #66d166;
+  }
+  
+  .nav a {
+    margin: 0 1.5vw;
+    color: #fff;
+    text-decoration: none;
+    font-size: .8rem;
+  }
+  
+  .hero h1 {
+    font-size: 3vw;
+    margin-top: 5vh;
+    padding: 5vh 5vw;
+  }
+  
+  .hero__info{
+    padding: 5vh 5vw;
+  }
+  .hero__info p {
+    font-size: 1vw;
+    margin-top: 1vh;
+  }
+  
+  .container-business-lunch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .business-lunch {
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    width: 80%;
+    height: 100%;
+    padding: 5vh 10vw;
+    text-align: center;
+    align-content: center;
+  }
+  
+  .business-lunch h2 {
+    font-size: 2.5vw;
+    color: #66d166;
+    margin-bottom: 2vh;
+  }
+  
+  .lunch__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  
+  .lunch__text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    max-width: 50%;
+    font-size: .8rem;
+  }
+  .lunch__text p{
+    padding-bottom: 10%;
+    border-bottom: .2vw solid #66d166;
+    margin-top: 10%;
+    align-items: start;
+  }
+  .lunch__image {
+    display: flex;
+    width: 50%;
+  }
+  .lunch__image img {
+    width: 100%;
+    height: auto;
+    border-radius: .5vw;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 4vh 0;
+  }
+  
+  .service {
+    font-size: 1.5vw;
+    color: #66d166;
+  }
+  
+  .custom-pizza {
+    height: 40vw;
+    background: url('../web_maket_abdullo/assets/images/pizza.jpg') no-repeat center/cover;
+    /* padding: 6vh 5vw; */
+    justify-items: end;
+    align-content: end;
+    text-align: center;
+  }
+  
+.pizza-pud{
+  padding: 6vh 5vw;
+}
+
+.back{
+  /* background-color: linear-gradient( to top, #111, #11111100); */
+  background-size: cover;
+  background: linear-gradient(0deg, #111, #11111100);
+}
+  
+  .custom-pizza h2 {
+    font-size: 2.5vw;
+    color: #66d166;
+  }
+  
+  .custom-pizza p {
+    font-size: 1.2vw;
+    margin-bottom: 2vh;
+  }
+  
+  .btn {
+    width: 25%;
+    height: auto;
+    padding: 1.5vh 3.5vw;
+    background-color: transparent;
+    border: 0.2vw solid #66d166;;
+    border-radius: 5vw;
+    color: #66d166;
+    font-size: 1.2vw;
+    font-family: "Unbounded", sans-serif;
+    cursor: pointer;
+  }
+  
+  .events {
+    background-color: #222;
+    padding: 5vh 5vw;
+  }
+  
+  .calendar__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .calendar, .event-list {
+    width: 48%;
+  }
+  
+  .event h3 {
+    font-size: 1.5vw;
+    margin-bottom: 1vh;
+  }
+  
+  .event p {
+    font-size: 1vw;
+    color: #aaa;
+  }
+  
+  .more-events {
+    display: inline-block;
+    margin-top: 2vh;
+    color: #66d166;
+    font-size: 1vw;
+    text-decoration: underline;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 3vh 0;
+    background-color: #111;
+    font-size: 1vw;
+    color: #666;
+  }
