@@ -44,16 +44,24 @@
   }
   
   .logo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+  .logo h2{
     font-family: "Playwrite AU SA", cursive;
-    font-size: 2rem;
+    font-size: 2vw;
+    font-weight: 400;
     color: #66d166;
+    margin-left: 1vw;
   }
   
   .nav a {
     margin: 0 1.5vw;
     color: #fff;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: 1vw;
   }
   
   .hero h1 {
@@ -108,7 +116,7 @@
     align-items: start;
     text-align: left;
     max-width: 50%;
-    font-size: .8rem;
+    font-size: 1vw;
   }
   .lunch__text p{
     padding-bottom: 10%;
@@ -126,17 +134,8 @@
     border-radius: .5vw;
   }
   
-  .services {
-    display: flex;
-    justify-content: space-around;
-    background-color: #111;
-    padding: 4vh 0;
-  }
   
-  .service {
-    font-size: 1.5vw;
-    color: #66d166;
-  }
+
   
   .custom-pizza {
     height: 40vw;
@@ -180,7 +179,32 @@
     cursor: pointer;
   }
   
-  .events {
+  .services{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+  .service-item{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .service-item img{
+    width: 10vw;
+  }
+  .service-item p{
+    font-size: 1.5vw;
+    margin-top: 1vw;
+  }
+  
+
+
+  
+
+  .events{
     background-color: #222;
     padding: 5vh 5vw;
   }
@@ -195,6 +219,9 @@
     width: 48%;
   }
   
+  .events h2{
+    font-size: 2vw;
+  }
   .event h3 {
     font-size: 1.5vw;
     margin-bottom: 1vh;
@@ -212,11 +239,197 @@
     font-size: 1vw;
     text-decoration: underline;
   }
-  
-  .footer {
+
+
+  .popular-desserts {
+    max-width: 100vw;
+    margin: auto;
+    padding: 10vw 5vw;
     text-align: center;
-    padding: 3vh 0;
-    background-color: #111;
+  }
+  
+  .popular-desserts h2 {
+    font-size: 3vw;
+    margin-bottom: 5vw;
+    position: relative;
+  }
+  
+  .popular-desserts h2::after {
+    content: "";
+    display: block;
+    width: 5vw;
+    height: .1vw;
+    background-color: #4caf50;
+    margin: 3vw auto 0;
+  }
+  
+  .dessert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+    gap: 3vw;
+  }
+  
+  .dessert-card {
+    background-color: #2a2a2a;
+    border-radius: 1vw;
+    overflow: hidden;
+    box-shadow: 0 .1px .3px rgba(0,0,0,0.4);
+    text-align: left;
+    padding-bottom: 3vw;
+  }
+  
+  .dessert-card img {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+  }
+  
+  .dessert-card h3 {
+    margin: 1.5vw;
+    font-size: 1.5vw;
+  }
+  
+  .dessert-card p {
+    margin: 0 1.5vw 1.5vw;
+    color: #bbb;
+    font-size: 1vw;
+  }
+  
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2vw;
+  }
+  .price-row button {
+    font-size: 1.2vw;
+    width: 12vw;
+    height: 3vw;
+  }
+  
+  .price {
+    color: #4caf50;
+    font-weight: bold;
+    font-size: 1.5vw;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: .8vw 1.5vw;
+    border-radius: .5vw;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1f6923;
+  }
+
+
+  .rev{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .reviews-card{
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    padding: 0 3.5vw;
+  }
+  .review{
+    background-color: #2a2a2a;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 2vw;
+    border-radius: .5vw;
+  }
+  .review p {
+    font-weight: 300;
+    font-size: 1vw;
+    color: #aaa;
+  }
+  .review h3{
+    font-size: 2vw;
+    color: #fff;
+  }
+  .review img{
+    width: 7vw;
+    height: auto;
+  }
+  .review-title h2::after {
+    content: "";
+    display: block;
+    width: 5vw;
+    height: .1vw;
+    background-color: #4caf50;
+    margin: 3vw auto 0;
+  }
+  .review-title h2 {
+    font-size: 3vw;
+    margin-bottom: 5vw;
+    /* position: relative; */
+  }
+
+  .logo-link{
+    display: flex;
+    width: 25vw;
+    text-decoration: none;
+  }
+  .logo-link img{
+    width: 10%;
+  }
+
+  .desert-link:hover{
+    color: #4caf50;
+  }
+
+
+
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2a;
+    text-align: center;
+    padding: 5vw 3vw;
+    margin-top: 10vw;
     font-size: 1vw;
     color: #666;
+    gap: 3vw;
+  }
+   /* .footer-list{
+    display: flex;
+    text-align: center;
+    gap: 5vw;
+   } */
+  
+  .footer-list::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: .1vw;
+    background-color: #fff;
+    margin: 3vw auto 0;
+    gap: 10vw;
+  }
+  .footer-list a{
+    margin: 0 3vw;
+    color: #fff;
+  }
+  .footer-social_media{
+    margin-top: 2vw;
+  }
+  .footer-social_media img{
+    width: 15vw;
+    height: auto;
   }
