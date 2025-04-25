@@ -22,7 +22,7 @@
     line-height: 1.2;
     background-color: #111;
     color: #fff;
-    background-image: url(../web_maket_abdullo/assets/eat.jpg);
+    background-image: url(/assets/eat.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -139,7 +139,7 @@
   
   .custom-pizza {
     height: 40vw;
-    background: url('../web_maket_abdullo/assets/images/pizza.jpg') no-repeat center/cover;
+    background: url('/assets/images/pizza.jpg') no-repeat center/cover;
     /* padding: 6vh 5vw; */
     justify-items: end;
     align-content: end;
