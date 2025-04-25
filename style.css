@@ -141,8 +141,8 @@
     height: 40vw;
     background: url('/assets/images/pizza.jpg') no-repeat center/cover;
     /* padding: 6vh 5vw; */
-    justify-items: end;
-    align-content: end;
+    justify-items: center;
+    align-content: center;
     text-align: center;
   }
   
